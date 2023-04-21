@@ -1,8 +1,8 @@
 SELECT*FROM country
 WHERE country LIKE 'A%a';
 
-SELECT*FROM country
-WHERE country like '6%n';
+SELECT*FROM country 
+WHERE length(country) >= 6 AND country like '%n';
 
 SELECT*FROM film
 WHERE title ILIKE '%T%T%T%T%';
